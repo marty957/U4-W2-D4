@@ -44,8 +44,7 @@ public class Main
          Collectors.summingDouble(Product::getPrice)));
 
 
-
-
+        System.out.println(categories.toString());
 
 
 
