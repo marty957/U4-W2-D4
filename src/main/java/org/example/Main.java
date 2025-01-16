@@ -2,15 +2,21 @@ package org.example;
 
 
 import com.github.javafaker.Faker;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main
-{ public static Faker fake= new Faker(new Locale("it"));
+{
+    private static final Logger log = LoggerFactory.getLogger(Main.class);
+    public static Faker fake= new Faker(new Locale("it"));
 
 
-    public static List<Costumer> listCostumer= new ArrayList<Costumer>();
+
+    public static List<Costumer> listCostumer= new ArrayList<>();
     public static List<Product> listProduct= new ArrayList<Product>();
     public static List<Order> listOrder= new ArrayList<Order>();
 
